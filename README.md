@@ -107,7 +107,7 @@ Os relatórios podem ser visualizados de duas formas:
     
 2.  **Via Grafana Cloud**, conectando o k6 ao Grafana para visualização das métricas em tempo real.
     
-  [Login](![Image](https://github.com/user-attachments/assets/e8f5ce72-e6b5-4409-aded-cec89f0c523a))
+  ![Login](https://github.com/user-attachments/assets/e8f5ce72-e6b5-4409-aded-cec89f0c523a)
 ----------
 
 ## 📌 Conclusão
