@@ -85,7 +85,7 @@ O script `login.js` executa os seguintes passos:
 ----------
 
 
-## ## 📈 **Análise das Métricas**
+## 📈 **Análise das Métricas**
 
 ### 🔍 **Resumo das Métricas Coletadas**
 
@@ -107,7 +107,7 @@ O script `login.js` executa os seguintes passos:
 
    -  **O que significa:**  O LCP mede o tempo que leva para o maior elemento visível na tela (como uma imagem ou bloco de texto) ser carregado.
     
-   -   **Análise:**  Um LCP de 2.09s está próximo do limite recomendado pelo Google, que é de 2.5s. Isso indica que o conteúdo principal da página está demorando um pouco para ser exibido.
+   -   **Análise:**  Um LCP de 2.09s está próximo do limite recomendado pelo Google, que é de 2.5s. Isso indica que apesar de estar dentro do limite, o conteúdo principal da página está demorando um pouco para ser exibido.
     
    -   🚀 **Melhorias:**
     
@@ -131,7 +131,7 @@ O script `login.js` executa os seguintes passos:
 
      -   **O que significa:**  O CLS mede a estabilidade visual da página, ou seja, quanto os elementos da página se movem durante o carregamento.
     
-     -   **Análise:**  Um CLS de 0.00 é perfeito, indicando que não há mudanças de layout durante o carregamento, o que proporciona uma experiência de usuário estável.
+     -   **Análise:**  Um CLS de 0.00 é excelente, indicando que não há mudanças de layout durante o carregamento, o que proporciona uma experiência de usuário estável.
     
      -  🚀 **Melhorias:**  Nenhuma melhoria necessária, pois o valor já é ideal.
     
@@ -184,8 +184,9 @@ O script `login.js` executa os seguintes passos:
 -   **Manter o FID, CLS e INP**  como estão, pois já estão em níveis excelentes.
 
 ----------
+📌 Para mais informações, consulte a documentação [web.dev](https://web.dev/baseline?hl=pt-br)
 
-## 📌 Relatórios de Teste
+## 📊 Relatórios de Teste
 
 Os relatórios podem ser visualizados de duas formas:
 
