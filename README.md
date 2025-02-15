@@ -149,7 +149,7 @@ O script `login.js` executa os seguintes passos:
 
         
 
-### Resumo das Melhorias:
+### 🚀 Melhorias sugeridas:
 
 -   **Otimizar imagens e usar CDN**  para melhorar o LCP.
     
