@@ -92,12 +92,12 @@ O script `login.js` executa os seguintes passos:
 
 |    📊 Métrica            |Valor                      |status                        |
 |----------------|-------------------------------|-----------------------------|
-|**LCP** (Largest Contentful Paint)|`**2.09s**`         |✅ **Bom**            |
-|**FID** (First Input Delay)       |`**1ms**`         |✅ **Bom**            |
-|**CLS** (Cumulative Layout Shift)     |`**0.00**`   |✅ **Bom**            |
-|**FCP** (First Contentful Paint)     |`**1.83s**`   |⚠️ **Melhoria Necessária**  |
-|**INP** (Interaction to Next Paint)    |`**8ms**`    |✅ **Bom**            |
-|**TTFB** (Time to First Byte)       |`**1686ms**`|⚠️ **Melhoria Necessária**|
+|**LCP** (Largest Contentful Paint)|`2.09s`         |✅ **Bom**            |
+|**FID** (First Input Delay)       |`1ms`         |✅ **Bom**            |
+|**CLS** (Cumulative Layout Shift)     |`0.00`   |✅ **Bom**            |
+|**FCP** (First Contentful Paint)     |`1.83s`   |⚠️ **Melhoria Necessária**  |
+|**INP** (Interaction to Next Paint)    |`8ms`    |✅ **Bom**            |
+|**TTFB** (Time to First Byte)       |`1686ms`|⚠️ **Melhoria Necessária**|
 
 
 ### 📌 **Interpretação das Métricas**
