@@ -65,22 +65,7 @@ k6 run --out cloud scripts/login.js
 
 ----------
 
-## 📊 Análise das Métricas
-
-Os testes geram diversas métricas de performance, incluindo:
-
--   **LCP (Largest Contentful Paint)** → Tempo de renderização do maior elemento visível.
-    
--   **FID (First Input Delay)** → Tempo de resposta da primeira interação do usuário.
-    
--   **FCP (First Contentful Paint)** → Tempo de renderização do primeiro elemento visível.
-    
--   **TTFB (Time to First Byte)** → Tempo até o primeiro byte ser recebido do servidor.
-    
-
-Exemplo de um teste bem-sucedido no Grafana:
-
-----------
+ Exemplo de um teste bem-sucedido no Grafana:
 
 ## 📌 Configuração do Script de Teste
 
@@ -99,6 +84,42 @@ O script `login.js` executa os seguintes passos:
 
 ----------
 
+
+## ## 📈 **Análise das Métricas**
+
+### 🔍 **Resumo das Métricas Coletadas**
+
+
+|    📊 Métrica            |Valor                      |status                        |
+|----------------|-------------------------------|-----------------------------|
+|**LCP** (Largest Contentful Paint)|`**2.09s**`         |✅ **Bom**            |
+|**FID** (First Input Delay)       |`**1ms**`         |✅ **Bom**            |
+|**CLS** (Cumulative Layout Shift)     |`**0.00**`   |✅ **Bom**            |
+|**FCP** (First Contentful Paint)     |`**1.83s**`   |⚠️ **Melhoria Necessária**  |
+|**INP** (Interaction to Next Paint)    |`**8ms**`    |✅ **Bom**            |
+|**TTFB** (Time to First Byte)       |`**1686ms**`|⚠️ **Melhoria Necessária**|
+
+
+### 📌 **Interpretação das Métricas**
+
+
+-   **LCP**: Tempo até o maior elemento de conteúdo ser renderizado. **Bom (< 2.5s)**.
+    
+-   **FID**: Tempo de resposta da primeira interação. **Ótimo (< 100ms)**.
+    
+-   **CLS**: Deslocamento inesperado do layout. **Ótimo (< 0.1)**.
+    
+-   **FCP**: Primeira pintura de qualquer conteúdo. **Precisa melhorar (< 1.8s recomendado)**.
+    
+-   **INP**: Latência das interações na página. **Ótimo (< 200ms)**.
+    
+-   **TTFB**: Tempo de resposta inicial do servidor. **Precisa melhorar (< 800ms recomendado)**.
+    
+
+> 🚀 **Sugestão de melhoria**: Reduzir o **TTFB** e otimizar o **FCP** para melhorar o carregamento inicial da página.
+
+----------
+
 ## 📌 Relatórios de Teste
 
 Os relatórios podem ser visualizados de duas formas:
@@ -108,6 +129,7 @@ Os relatórios podem ser visualizados de duas formas:
 2.  **Via Grafana Cloud**, conectando o k6 ao Grafana para visualização das métricas em tempo real.
     
   ![Grafana](https://github.com/user-attachments/assets/9a17839f-9ed1-4ccb-a21a-d2c1ee9ba9d9)
+
 ----------
 
 ## 📌 Conclusão
