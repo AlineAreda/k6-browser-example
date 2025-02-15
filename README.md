@@ -109,14 +109,7 @@ O script `login.js` executa os seguintes passos:
     
    -   **Análise:**  Um LCP de 2.09s está próximo do limite recomendado pelo Google, que é de 2.5s. Isso indica que apesar de estar dentro do limite, o conteúdo principal da página está demorando um pouco para ser exibido.
     
-   -   🚀 **Melhorias:**
-    
-    -   **Otimizar imagens:**  Comprimir e redimensionar imagens para reduzir o tempo de carregamento.
-        
-    -   **Usar CDN:**  Utilizar uma Content Delivery Network (CDN) para servir conteúdo estático mais rapidamente.
-        
-    -   **Pré-carregar recursos críticos:**  Usar  `<link rel="preload">`  para carregar recursos importantes mais cedo.
-        
+           
 
 -  **FID (First Input Delay)**
 
@@ -124,17 +117,14 @@ O script `login.js` executa os seguintes passos:
     
    -   **Análise:**  Um FID de 1ms é excelente, indicando que a página responde quase instantaneamente às interações do usuário.
     
-   -   **Melhorias:**  Nenhuma melhoria necessária, pois o valor já é ideal.
-    
-
+ 
 -    **CLS (Cumulative Layout Shift)**
 
      -   **O que significa:**  O CLS mede a estabilidade visual da página, ou seja, quanto os elementos da página se movem durante o carregamento.
     
      -   **Análise:**  Um CLS de 0.00 é excelente, indicando que não há mudanças de layout durante o carregamento, o que proporciona uma experiência de usuário estável.
     
-     -  🚀 **Melhorias:**  Nenhuma melhoria necessária, pois o valor já é ideal.
-    
+ 
 
 - **FCP (First Contentful Paint)**
 
@@ -142,11 +132,6 @@ O script `login.js` executa os seguintes passos:
     
     -   **Análise:**  Um FCP de 1.83s está dentro do limite recomendado (1.8s a 3s), mas pode ser melhorado para uma experiência mais rápida.
     
-     -  🚀 **Melhorias:**
-    
-         -   **Minificar CSS e JavaScript:**  Reduzir o tamanho dos arquivos CSS e JS para acelerar o carregamento.
-        
-         -   **Remover recursos bloqueantes:**  Identificar e remover scripts ou estilos que bloqueiam a renderização.
         
 
 -  **INP (Interaction to Next Paint)**
@@ -154,23 +139,14 @@ O script `login.js` executa os seguintes passos:
     -   **O que significa:**  O INP mede o tempo que leva para a página responder a interações do usuário, como cliques ou rolagens.
     
      -   **Análise:**  Um INP de 8ms é excelente, indicando que a página responde rapidamente às interações do usuário.
-    
-     -  🚀 **Melhorias:**  Nenhuma melhoria necessária, pois o valor já é ideal.
-    
+
 
 -  **TTFB (Time to First Byte)**
 
      -   **O que significa:**  O TTFB mede o tempo que leva para o navegador receber o primeiro byte de dados do servidor.
     
     - **Análise:**  Um TTFB de 1686ms (1.686s) é alto, indicando que o servidor está demorando para responder. Isso pode impactar negativamente a experiência do usuário.
-    
-    - 🚀  **Melhorias:**
-    
-    -   **Otimizar o servidor:**  Verificar a configuração do servidor e otimizar o tempo de resposta.
-        
-    -   **Usar cache:**  Implementar cache no servidor para reduzir o tempo de resposta para solicitações repetidas.
-        
-    -   **Reduzir o tempo de consulta ao banco de dados:**  Se aplicável, otimizar consultas ao banco de dados para reduzir o tempo de processamento.
+
         
 
 ### Resumo das Melhorias:
